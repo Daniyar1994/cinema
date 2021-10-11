@@ -1,5 +1,7 @@
 const schemeSvg = document.querySelector('.scheme svg');
-const TotalPriceTag = document.querySelector('.price-total')
+const TotalPriceTag = document.querySelector('.price-total');
+const menuButton = document.querySelector('.m-menu');
+const menu = document.querySelector('.menu');
 let cost = 800;
 let totalPrice=0;
 schemeSvg.addEventListener('click', (event) =>{
@@ -12,3 +14,8 @@ schemeSvg.addEventListener('click', (event) =>{
     }
     
 })
+
+menuButton.addEventListener('click', ()=>{
+    console.log('click');
+    menu.classList.toggle('is-open')
+} )
